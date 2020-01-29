@@ -6,9 +6,12 @@ import styles from './styles';
 const Header = () => (
   <View style={styles.container}>
     <Image
+      style={styles.logo}
       resizeMode="contain"
-      styles={styles.logo}
-      source={require('./images/logo.png')}
+      source={{
+        uri:
+          'https://logos-download.com/wp-content/uploads/2016/06/Reddit_logo_full_1.png',
+      }}
     />
   </View>
 );

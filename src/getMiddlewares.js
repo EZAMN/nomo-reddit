@@ -1,6 +1,5 @@
-import { applyMiddleware, compose } from 'redux';
+import {applyMiddleware, compose} from 'redux';
 import Thunk from 'redux-thunk';
-
 
 // Param the middlewares depending of the enviroment
 const DEFAULT_ENVIRONMENT = 'development';
@@ -11,7 +10,8 @@ if (process && process.env && process.env.NODE_ENV) {
 
 function getMiddlewaresDev() {
   // Apply redux devtools hook
-  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  const composeEnhancers =
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   // Apply thunk middleware for async actions
   const enhancer = composeEnhancers(applyMiddleware(Thunk));
 
@@ -31,5 +31,4 @@ export default function getMiddlewares() {
     return getMiddlewaresDev();
   }
   return getMiddlewaresProd();
-  
 }

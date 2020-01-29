@@ -1,27 +1,41 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
-import {StatusBar} from 'react-native';
 
 const styles = EStyleSheet.create({
+  button: {
+    margin: 5,
+  },
+  wrapper: {
+    backgroundColor: '#ddd',
+    flexDirection: 'row',
+    flex: 1,
+    padding: 5,
+    alignItems: 'flex-end',
+  },
+  title: {
+    alignSelf: 'flex-start',
+    paddingVertical: 10,
+  },
+  image: {
+    flex: 1,
+    flexGrow: 1,
+    width: '100%',
+    height: '100%',
+    marginRight: 5,
+  },
   container: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-    /*'@media_ios': {
-          paddingTop: 20;
-      },
-      '@media_android' : {
-          paddingTop: StatusBar.currentHeight
-      }*/
+    flex: 3,
+    alignItems: 'flex-end',
   },
-  logo: {
-    paddingVertical: 5,
-    paddingHorizontal: 20,
+  footer: {
+    flexDirection: 'row',
+    flex: 1,
+    flexGrow: 1,
+    justifyContent: 'space-between',
   },
-  toolbox: {
-    alignSelf: 'flex-end',
-    paddingVertical: 5,
-    paddingHorizontal: 20,
+  toe: {
+    flex: 1,
+    fontSize: 10,
+    flexWrap: 'wrap',
   },
 });
 

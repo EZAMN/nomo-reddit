@@ -11,17 +11,20 @@ const Toolbox = ({onPress, selectedSort, onSortChange}) => (
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={require('./images/refresh.png')}
+        source={{
+          uri:
+            'https://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/512/refresh-icon.png',
+        }}
       />
     </TouchableOpacity>
     <Picker
       selectedValue={selectedSort}
       style={styles.picker}
       onValueChange={onSortChange}>
-      <Picker.Item label={literals.Top} value="top" />
-      <Picker.Item label={literals.New} value="new" />
-      <Picker.Item label={literals.Hot} value="hot" />
-      <Picker.Item label={literals.Controversial} value="controversial" />
+      <Picker.Item label={literals.top} value="top" />
+      <Picker.Item label={literals.new} value="new" />
+      <Picker.Item label={literals.hot} value="hot" />
+      <Picker.Item label={literals.controversial} value="controversial" />
     </Picker>
   </View>
 );
