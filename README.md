@@ -10,11 +10,11 @@ When the project folder is already created
 ```bash
 npm install
 ```
-## Starting the app
+
+## Starting the server
 ```bash
 npm start
 ```
-
 
 ## Starting the app
 ```bash
