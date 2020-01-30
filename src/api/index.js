@@ -15,12 +15,8 @@ const fetchAPI = (url, params = {}) => {
   );
 };
 
-// Calls the api to get a post list
-export const getPostsList = (
-  page = 1,
-  sortBy = sortByDefault,
-  lastPostName = '',
-) => {
+// Calls the api to get a post list based on the page and last image loaded
+export const getPostsList = (sortBy = sortByDefault, lastPostName = '') => {
   const finalURL = `${picsSubreddit}${sortBy}.json`;
 
   let params = {limit: postsPerPageDefault};

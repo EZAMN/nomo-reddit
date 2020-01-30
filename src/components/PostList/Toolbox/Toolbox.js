@@ -4,7 +4,7 @@ import {View, TouchableOpacity, Picker, Image} from 'react-native';
 import literals from '../../../config/literals';
 import styles from './styles';
 
-// Component to render the application Toolbox
+// Component to render the application Toolbox which holds the refresh button and sorting change button
 const Toolbox = ({onPress, selectedSort, onSortChange}) => (
   <View style={styles.container}>
     <TouchableOpacity style={styles.button} onPress={onPress}>

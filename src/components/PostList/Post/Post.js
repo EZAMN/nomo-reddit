@@ -7,6 +7,10 @@ import styles from './styles';
 
 // Component to render a post item in the post list
 const Post = ({post, onPress}) => {
+  const callPostDetails = () => {
+    onPress(post.item.data.url);
+  };
+
   const image =
     typeof post.item.data.thumbnail !== 'undefined' &&
     post.item.data.thumbnail !== 'self' ? (
@@ -20,7 +24,7 @@ const Post = ({post, onPress}) => {
     );
 
   return (
-    <TouchableHighlight onPress={onPress} style={styles.button}>
+    <TouchableHighlight onPress={callPostDetails} style={styles.button}>
       <View style={styles.wrapper}>
         {image}
         <View style={styles.container}>

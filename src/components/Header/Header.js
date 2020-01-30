@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Image} from 'react-native';
 import styles from './styles';
 
-// Component to render the application header
+// Component to render the application header which holds the logo
 const Header = () => (
   <View style={styles.container}>
     <Image

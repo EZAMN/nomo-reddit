@@ -1,6 +1,7 @@
 import React from 'react';
 import FallbackComponent from './FallbackComponent';
 
+//Component to show errors
 class ErrorBoundary extends React.Component {
   state = {error: null, hasError: false};
 
