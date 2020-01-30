@@ -12,11 +12,11 @@ npm install
 ```
 ## Starting the app
 ```bash
-react-native start
+npm start
 ```
 
 
 ## Starting the app
 ```bash
-react-native run-android
+npm run android
 ```
